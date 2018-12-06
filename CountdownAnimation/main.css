@@ -26,7 +26,7 @@ h1{
   width: 20%;
   border-radius: 20px;
   box-sizing: border-box;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #clock span:nth-child(1){
@@ -64,20 +64,13 @@ h1{
 }
 
 strong.turn{
-  /* position: relative; */
-	/* display: block; */
-	/* margin: 0; */
-	/* font-size: 4rem; */
-  /* line-height: 1; */
+  position: relative;
+	font-size: 4rem;
 	transform: translateY(6rem);
-	animation: turn .3s linear forwards;
-	/* z-index: 1; */
-	/* text-shadow: 0px 1px 1px rgba(255,255,255,1); */
+	animation: turn .7s linear forwards;
 }
 
 @keyframes turn {
-	100% {
-    /* transform: translateY(0); */
-    display: none;
-	}
+  0%   { transform: translateY(-50px); }
+  100% { transform: translateY(50px); }
 }
